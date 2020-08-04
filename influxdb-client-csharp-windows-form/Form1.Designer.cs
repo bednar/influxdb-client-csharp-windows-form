@@ -49,7 +49,7 @@
             // 
             this.button1.Location = new System.Drawing.Point(43, 92);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(260, 38);
+            this.button1.Size = new System.Drawing.Size(340, 38);
             this.button1.TabIndex = 1;
             this.button1.Text = "Check Status";
             this.button1.UseVisualStyleBackColor = true;
@@ -59,7 +59,7 @@
             // 
             this.label2.Location = new System.Drawing.Point(174, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 27);
+            this.label2.Size = new System.Drawing.Size(209, 27);
             this.label2.TabIndex = 2;
             this.label2.Text = "Unknown";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -68,7 +68,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(349, 173);
+            this.ClientSize = new System.Drawing.Size(431, 176);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);

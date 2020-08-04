@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using InfluxDB.Client;
 
 namespace influxdb_client_csharp_windows_form
 {
@@ -21,9 +22,12 @@ namespace influxdb_client_csharp_windows_form
         {
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            label2.Text = "TODO implement";
+            var client = InfluxDBClientFactory.Create("http://10.100.0.103:9999", "my-token".ToCharArray());
+            var health = await client.HealthAsync();
+            
+            label2.Text = $"Health: {health.Status}, Version: {health.Version}";
             label2.Refresh();
         }
 
